@@ -7,9 +7,17 @@ const Main = () => {
     getNews();
   },[])
   console.log(news);
-  const print = news.map(elment =>{
+  const print = news.map(element =>{
     return(
-      <h2>{elment.title}</h2>
+      <div>
+        {element.media.length !== 0?<img src={element.media[0]['media-metadata'][(element.media[0]['media-metadata'].length - 1)].url} alt="" />:null}
+        <h2>{element.title}</h2>
+        <p>{element.abstract}</p>
+        {console.log(element)} 
+        {element['geo_facet'][0]?<p>{element['geo_facet'][0]}</p>:null}
+        <a href={element.url} target="_blank" rel="noreferrer">Mas info</a>
+        
+      </div>
     )
   })
 
