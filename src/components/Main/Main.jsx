@@ -6,7 +6,7 @@ const Main = () => {
   useEffect(()=>{
     getNews();
   },[])
-
+  console.log(news);
   const print = news.map(elment =>{
     return(
       <h2>{elment.title}</h2>
