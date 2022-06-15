@@ -1,7 +1,9 @@
+import './Footer.scss'
+
 const Footer = () => {
   return (
     <footer className="Footer">
-        <h2>Holi, soy el footer</h2>
+        <h2>Michael L. Sánchez</h2>
     </footer>
   )
 }

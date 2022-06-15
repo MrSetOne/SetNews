@@ -1,0 +1,15 @@
+@import '../../colors.scss';
+.Footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 0;
+    width: 100%;
+    background-color: $darkGray;
+    padding: .5rem 1rem;
+    h2 {
+        color: $almostWhite;
+        font-size: 1.3rem;
+    }
+}

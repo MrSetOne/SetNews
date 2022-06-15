@@ -1,0 +1,38 @@
+@import "../../../colors.scss";
+.Hero {
+    width: 100%;
+    background-image: url(../../../assets/pexels-axel-vandenhirtz-929280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    padding-right: 3.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 17rem;
+        width: 17rem;
+        border-radius: 4rem;
+        background: $darkGray;
+        p {
+            font-family: 'UnifrakturMaguntia', cursive;
+            font-size: 14rem;
+            color: $almostWhite;
+            span {
+                font-size: 18rem;
+                margin-left: -.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .Hero {
+        justify-content: center;
+        padding: 0;
+    }
+}

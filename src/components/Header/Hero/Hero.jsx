@@ -1,7 +1,14 @@
+import {Link} from 'react-router-dom'
+import './Hero.scss'
+
 const Hero = () => {
   return (
     <div className="Hero">
-        <h2>Soy el hero</h2>
+        <Link to='/'>
+          <div>
+            <p>{"{"}<span>s</span>{"}"}</p>
+          </div>    
+        </Link>
     </div>
   )
 }

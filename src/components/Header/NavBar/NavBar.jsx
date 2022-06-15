@@ -1,12 +1,15 @@
 import {Link} from 'react-router-dom'
+import './NavBar.scss'
 
 const NavBar = () => {
   return (
-    <nav className="NavBar" style={{padding:"20px",display:"flex",gap:"10px"}}>
-        <Link to="/">Home</Link>
-        <Link to="/news">Noticias</Link>
-        <Link to="/newnews">Crear articulo</Link>
-    </nav>
+    <div className='NabBar__container'>
+      <nav className="NavBar" >
+          <Link to="/" className='NavBar__item'>Home</Link>
+          <Link to="/news" className='NavBar__item'>News</Link>
+          <Link to="/newnews" className='NavBar__item'>Create News</Link>
+      </nav>
+    </div>
   )
 }
 
