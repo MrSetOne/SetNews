@@ -1,0 +1,61 @@
+.NewNews {
+    background-image: url(../../assets/write.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        border: 2px solid white;
+        margin: 2rem auto 4rem auto;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        width: min(70rem, 95vw);
+        padding: 2rem;
+        animation: writeUp 2s;
+        * {
+            font-size: 1.6rem;
+            border: none;
+            outline: none;
+        }
+        label {
+            color: white;
+            font-size: 2rem;
+        }
+        input {
+            padding: .5rem 1rem;
+            margin-bottom: 1rem;
+        }
+        textarea {
+            padding: .5rem 1rem;
+            resize: vertical;
+            height: 10rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            padding: 1rem 2rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+.alerter {
+    position: fixed;
+    bottom: 5rem;
+    background-color: red;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+@keyframes writeUp {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

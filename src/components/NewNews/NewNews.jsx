@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import isEmail from "validator/lib/isEmail"
+import './NewNews.scss'
 
 const NewNews = () => {
 
