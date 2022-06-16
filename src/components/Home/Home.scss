@@ -1,0 +1,13 @@
+.Home {
+    height: calc(100vh - min(9vw, 8.6rem) - 20rem);
+    background-image: url('../../assets/cover_option1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: white;
+        font-size: min(16vw, 16rem);
+    }
+}

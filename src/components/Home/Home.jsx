@@ -1,7 +1,9 @@
+import './Home.scss'
+
 const Home = () => {
   return (
     <section className="Home">
-        <h1>Soy el Home</h1>
+        <h1>All the truth</h1>
     </section>
   )
 }
