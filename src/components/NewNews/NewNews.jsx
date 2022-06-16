@@ -59,6 +59,7 @@ const NewNews = () => {
         if(data.body.length < 30){
           return setAlerter('El body es demasiado corto')
         }
+        setData(initialState)
         setAlerter("Noticia creada")
         setTimeout(() => {
             navigate("/")
@@ -76,13 +77,13 @@ const NewNews = () => {
     <section className="NewNews">
         <form onSubmit={uploadForm}>
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Tu nombre" onChange={handleInputChange}/>
+            <input type="text" name="name" id="name" placeholder="Your name" onChange={handleInputChange}/>
             <label htmlFor="email">Email</label>
-            <input type="text" name="email" id="email" onChange={handleInputChange}/>
+            <input type="text" name="email" id="email" placeholder="Your email" onChange={handleInputChange}/>
             <label htmlFor="location">Location</label>
-            <input type="text" name="location" id="location" onChange={handleInputChange} />
+            <input type="text" name="location" id="location" placeholder="Your location" onChange={handleInputChange} />
             <label htmlFor="title">Title</label>
-            <input type="text" name="title" id="title" onChange={handleInputChange} />
+            <input type="text" name="title" id="title" placeholder="Article's title" onChange={handleInputChange} />
             <label htmlFor="body">Body</label>
             <textarea name="body" id="body" onChange={handleInputChange}></textarea>
             <button type="submit" disabled={btnDisabled} >Enviar</button>
