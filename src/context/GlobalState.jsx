@@ -18,7 +18,7 @@ export const GlobalProvider = ({ children }) => {
 
     dispatch({
       type: "GET_NEWS",
-      payload: res.data.results, //res.data.results = array de personajes
+      payload: res.data.results,
     });
   };
   return (
@@ -28,7 +28,7 @@ export const GlobalProvider = ({ children }) => {
         getNews,
       }}
     >
-      {children} {/* children son mis componentes hijos */}
+      {children}
     </GlobalContext.Provider>
   );
 };
